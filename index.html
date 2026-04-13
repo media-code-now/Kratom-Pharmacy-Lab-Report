@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kratom Pharmacy Lab Report</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #407e3b 0%, #82b442 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            margin: 0 auto 20px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .report-date {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .image-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-info {
+            padding: 20px;
+            background: #f8f9fa;
+        }
+
+        .image-info h3 {
+            color: #407e3b;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .image-info p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .image-card img {
+                height: 300px;
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            background: #407e3b;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Kratom Pharmacy Logo">
+            </div>
+            <h1>Kratom Pharmacy Lab Report</h1>
+            <p>Laboratory Analysis & Quality Assessment</p>
+        </header>
+
+        <div class="report-date">
+            <strong>Report Date:</strong> April 8, 2026
+        </div>
+
+        <div class="gallery">
+            <div class="image-card">
+                <a href="WhatsApp Image 2026-04-08 at 12.05.09.jpeg" data-lightbox="lab-report" data-title="Green Kratom Powder">
+                    <img src="WhatsApp Image 2026-04-08 at 12.05.09.jpeg" alt="Lab Report Image 1">
+                </a>
+                <div class="image-info">
+                    <h3>Green Kratom Powder</h3>
+                    <p>First section of the comprehensive laboratory analysis documenting quality standards and initial findings.</p>
+                    <span class="badge">Lab Analysis</span>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <a href="WhatsApp Image 2026-04-08 at 12.05.10.jpeg" data-lightbox="lab-report" data-title="Kratom Alkaloids">
+                    <img src="WhatsApp Image 2026-04-08 at 12.05.10.jpeg" alt="Lab Report Image 2">
+                </a>
+                <div class="image-info">
+                    <h3>Kratom Alkaloids</h3>
+                    <p>Continuation of the laboratory analysis with detailed test results and quality certifications.</p>
+                    <span class="badge">Lab Analysis</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Kratom Pharmacy. All rights reserved. | Professional Laboratory Report</p>
+        </footer>
+    </div>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'showImageNumberLabel': true
+        })
+    </script>
+</body>
+</html>
