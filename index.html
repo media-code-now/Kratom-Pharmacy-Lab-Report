@@ -144,6 +144,45 @@
             font-weight: 600;
             margin-top: 10px;
         }
+
+        .pdf-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pdf-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .pdf-preview {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #407e3b;
+            gap: 20px;
+        }
+
+        .pdf-preview:hover {
+            background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
+        }
+
+        .pdf-icon {
+            font-size: 5rem;
+        }
+
+        .pdf-preview span {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #407e3b;
+        }
     </style>
 </head>
 <body>
@@ -180,6 +219,18 @@
                     <h3>White Kratom Powder</h3>
                     <p>Continuation of the laboratory analysis with detailed test results and quality certifications.</p>
                     <span class="badge">Lab Analysis</span>
+                </div>
+            </div>
+
+            <div class="pdf-card">
+                <a href="blueshot.pdf" target="_blank" class="pdf-preview">
+                    <div class="pdf-icon">📄</div>
+                    <span>Click to View PDF</span>
+                </a>
+                <div class="image-info">
+                    <h3>Blue Shot</h3>
+                    <p>Detailed laboratory analysis report for Blue Shot — click to open the full PDF document.</p>
+                    <span class="badge">PDF Report</span>
                 </div>
             </div>
         </div>
